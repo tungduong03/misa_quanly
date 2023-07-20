@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\misa.hust.21h.api.props" />
+</Project>
