@@ -1,0 +1,76 @@
+.menu-option {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.logo {
+    display: flex;
+    height: 56px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.logo-item-icon {
+    text-align: left;
+    height: 100%;
+    width: 20px;
+    background-image: url(../assets/img/menu.png);
+    padding-right: 12px;
+    background-repeat: no-repeat;
+    background-position-x: 15px;
+    background-position-y: center;
+    padding-left: 20px;
+}
+
+.logo-img {
+    background-image: url(../assets/img/Logo_Module_TiengViet_White.66947422\ \(1\).png);
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position-x: 0px;
+    background-position-y: center;
+}
+
+.menu-item {
+    display: flex;
+    height: 48px;
+    /* background-color: #019160; */
+    border-radius: 4px;
+    /* padding-left: 24px;
+    padding-right: 24px; */
+    text-align: center;
+    color: #ffffff;
+    /* margin-right: 20px; */
+    border: none;
+}
+
+.menu-item:hover {
+    background-color: #fcfcfc;
+    color: black;
+}
+
+.menu-item:active {
+    background-color: #ffffff;
+}
+
+.menu-item-icon {
+    text-align: left;
+    height: 100%;
+    width: 20px;
+    /* background-image: url(../assets/img/dashboard.png); */
+    padding-right: 12px;
+    background-repeat: no-repeat;
+    background-position-x: 12px;
+    background-position-y: center;
+    padding-left: 25px;
+}
+
+.menu-item-text {
+    display: flex;
+    align-items: center;
+}
+
+.icon-dashboard {
+    background-image: url(../assets/img/dashboard.png);
+}

@@ -1,0 +1,131 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #e4eeeb;
+}
+
+.employee {
+    height: 56px;
+    /* background-color: #6e5894; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.option-employee {
+    /* background-color: aqua; */
+    height: 56px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    border: 1px solid #ddd;
+}
+
+.text {
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.m-button {
+    height: 40px;
+    background-color: #019160;
+    border-radius: 4px;
+    padding-left: 24px;
+    padding-right: 24px;
+    text-align: center;
+    color: #ffffff;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.m-button:hover {
+    background-color: #2FBE8E;
+}
+
+.m-button:active {
+    background-color: #01B075;
+}
+
+.m-button-icon {
+    text-align: left;
+    height: 40px;
+    width: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-image: url(../assets/img/refresh.png);
+    background-repeat: no-repeat;
+    background-position-x: 15px;
+    background-position-y: center;
+    /* padding-left: 40px; */
+}
+
+.m-button-icon:hover {
+    background-color: #f0f4f2;
+}
+
+.m-button-icon:active {
+    background-color: #e4eeeb;
+}
+
+.input {
+    height: 25px;
+    border-radius: 4px;
+    border: #2FBE8E solid 1px;
+}
+
+.wrap-content {
+    background-color: #ffffff;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border-radius: 8px;
+    border: none;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 56px calc(100vh - 56px);
+}
+
+.list-employee {
+    overflow-y: auto;
+}
+
+table {
+    width: 100%;
+    border-spacing: 2px;
+    /* table-layout: fixed; */
+}
+
+#tableListEmployee {
+    border: 1px solid #ddd;
+}
+
+tr {
+    text-align: left;
+}
+
+th {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+}
+
+th,
+td {
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.footer {
+    position: fixed;
+    background-color: #ffffff;
+    height: 48px;
+    width: 100%;
+    border-top: solid;
+    display: flex;
+    align-items: center;
+    bottom: 0px;
+}

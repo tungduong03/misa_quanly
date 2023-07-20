@@ -1,0 +1,80 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.data-info {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+
+.data-item-icon {
+    text-align: left;
+    height: 100%;
+    width: 20px;
+    /* background-image: url(../assets/img/dashboard.png); */
+    padding-right: 12px;
+    background-repeat: no-repeat;
+    background-position-x: 12px;
+    background-position-y: center;
+    padding-left: 15px;
+}
+
+.icon-menu {
+    background-image: url(../assets/img/menu-header.png);
+}
+
+.combobox {
+    border-width: 0px;
+    border-color: #bbbbbb;
+    border-radius: 4px;
+    height: 40px;
+    outline: none;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 100%;
+    width: 50%;
+}
+
+.user-text {
+    padding-right: 15px;
+}
+
+.user-item-icon {
+    text-align: left;
+    height: 100%;
+    width: 20px;
+    /* background-image: url(../assets/img/dashboard.png); */
+    padding-right: 5px;
+    background-repeat: no-repeat;
+    background-position-x: 12px;
+    background-position-y: center;
+    padding-left: 5px;
+}
+
+.icon-noti {
+    background-image: url(../assets/img/noti.png);
+}
+
+.user-item-img {
+    text-align: left;
+    height: 100%;
+    width: 20px;
+    /* background-image: url(../assets/img/dashboard.png); */
+    padding-right: 5px;
+    background-repeat: no-repeat;
+    background-position-x: 12px;
+    background-position-y: center;
+    padding-left: 10px;
+}
+
+.icon-person {
+    background-image: url(../assets/img/person_circle_icon_159926.png);
+}

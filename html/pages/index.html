@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/content.css">
+    <link rel="stylesheet" href="../css/dialog.css">
+    <title>Quản lý nhân viên</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="menu">
+            <div class="logo">
+                <div class="logo-item-icon"></div>
+                <div class="logo-img"> </div>
+            </div>
+            <div class="menu-option">
+                <div class="menu-item dashboard">
+                    <div class="menu-item-icon icon-dashboard"></div>
+                    <div class="menu-item-text">Tổng quan</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-icon"></div>
+                    <div class="menu-item-text">Tiền</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-icon"></div>
+                    <div class="menu-item-text">Tiền gửi</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-icon"></div>
+                    <div class="menu-item-text">Mua hàng</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-icon"></div>
+                    <div class="menu-item-text">Bán hàng</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-icon"></div>
+                    <div class="menu-item-text">Quản lý hóa đơn</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-icon"></div>
+                    <div class="menu-item-text">Kho</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-icon"></div>
+                    <div class="menu-item-text">Công cụ dụng cụ</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-icon"></div>
+                    <div class="menu-item-text">Tài sản cố định</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-icon"></div>
+                    <div class="menu-item-text">Thuế</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-icon"></div>
+                    <div class="menu-item-text">Phân tích tài chính</div>
+                </div>
+
+            </div>
+        </div>
+        <div class="header">
+            <div class="data-info">
+                <div class="data-item-icon data-item-icon icon-menu"></div>
+                <div class="database">
+                    <select class="combobox" name="comboBox" id="comboBox">
+                        <option value="1">Công ty trách nhiệm hữu hạn</option>
+                        <option value="2">Nữ</option>
+                        <option value="3">Khác</option>
+                    </select>
+                </div>
+            </div>
+            <div class="user">
+                <div class="noti user-item-icon icon-noti"></div>
+                <div class="img-user user-item-img icon-person"></div>
+                <div class="user-text">
+                    <select class="combobox" name="comboBox" id="comboBox">
+                        <option value="1">Nguyễn Tùng Dương</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="employee">
+                <div class="text">Nhân Viên</div>
+                <div id="btnAdd" class="btn-add-employee">
+                    <button class="m-button">
+                        Thêm mới nhân viên
+                    </button>
+                </div>
+            </div>
+            <div class="wrap-content">
+                <div class="option-employee">
+                    <div class="search-employee">
+                        <input class="input" type="text" placeholder="Tìm kiếm nhân viên">
+                    </div>
+                    <div class="btn-refresh">
+                        <div class="m-button-icon"></div>
+                    </div>
+                </div>
+                <div class="list-employee">
+                    <table id="tableListEmployee">
+                        <thead>
+                            <tr>
+                                <th propValue="checkbox"><input type="checkbox" name="" id=""></th>
+                                <th propValue="employeeCode">Mã nhân viên</th>
+                                <th propValue="employeeName">Tên nhân viên</th>
+                                <th propValue="gender" format="gender">Giới tính</th>
+                                <th propValue="dateOfBirth" format="date">Ngày sinh</th>
+                                <th propValue="identityNumber">Số CMND</th>
+                                <th propValue="positionName">Chức danh</th>
+                                <th propValue="departmentName">Tên đơn vị</th>
+                                <th propValue="accountNumber">Số tài khoản</th>
+                                <th propValue="bank">Tên ngân hàng</th>
+                                <th propValue="bankBranch">Chi nhánh ngân hàng</th>
+                                <th propValue="combobox">Chức năng</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="footer">
+                    <div class="footer-text">Tổng số bản ghi</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="dlInfor" class="dlInfor" hidden>
+        <div id="dialog-employeeInfor" class="dialog" type="hidden">
+            <div class="dialog--wrapper">
+                <button id="dialog__close-employee" class="dialog__button">X</button>
+                <div class="dialog__header">
+                    <div class="dialog-text">Thông tin nhân viên</div>
+                    <div class="dialog-info-employee">
+                        <input type="checkbox" id="opt1" name="opt1" value="">
+                        <label for="opt1"> Là khách hàng</label><br>
+                        <input type="checkbox" id="opt2" name="opt2" value="">
+                        <label for="opt2"> Là nhà cung cấp</label><br>
+                    </div>
+                </div>
+                <div class="dialog__content dialog__content-employee">
+                    <div class="one">
+                        <div class="one-one">
+                            <div class="one-one-one">
+                                <div class="form-employee">
+                                    <div class="dialog-text-content">Mã</div>
+                                    <form action="">
+                                        <input type="text" id="fname" name="fname"><br>
+                                    </form>
+                                </div>
+                                <div class="form-employee">
+                                    <div class="dialog-text-content">Tên</div>
+                                    <form action="">
+                                        <input type="text" id="fname" name="fname"><br>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="form-employee">
+                                <div class="dialog-text-content">Đơn vị</div>
+                                <form action="">
+                                    <input type="text" id="fname" name="fname" class="zoom"><br>
+                                </form>
+                            </div>
+                            <div class="form-employee">
+                                <div class="dialog-text-content">Chức danh</div>
+                                <form action="">
+                                    <input type="text" id="fname" name="fname" class="zoom"><br>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="1-2">
+                            <div class="one-two-one">
+                                <div class="form-employee">
+                                    <div class="dialog-text-content">Ngày sinh</div>
+                                    <form action="">
+                                        <input type="date" id="fname" name="fname"><br>
+                                    </form>
+                                </div>
+                                <div class="form-employee">
+                                    <div class="dialog-text-content">Giới tính</div>
+                                    <div class="gender">
+                                        <input type="checkbox" id="1" name="1" value="1">
+                                        <label for="1"> Nam</label><br>
+                                        <input type="checkbox" id="2" name="2" value="2">
+                                        <label for="2"> Nữ</label><br>
+                                        <input type="checkbox" id="3" name="3" value="3">
+                                        <label for="3"> Khác</label><br>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="one-two-two">
+                                <div class="form-employee">
+                                    <div class="dialog-text-content">Số CMND</div>
+                                    <form action="">
+                                        <input type="text" id="fname" name="fname"><br>
+                                    </form>
+                                </div>
+                                <div class="form-employee">
+                                    <div class="dialog-text-content">Ngày cấp</div>
+                                    <form action="">
+                                        <input type="date" id="fname" name="fname"><br>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="form-employee">
+                                <div class="dialog-text-content">Nơi cấp</div>
+                                <form action="">
+                                    <input type="text" id="fname" name="fname" class="zoom"><br>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="2">
+                        <div class="form-employee">
+                            <div class="dialog-text-content">Địa chỉ</div>
+                            <form action="">
+                                <input type="text" id="fname" name="fname" class="zoom"><br>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="three">
+                        <div class="thre-one">
+                            <div class="form-employee">
+                                <div class="dialog-text-content">ĐT di động</div>
+                                <form action="">
+                                    <input type="text" id="fname" name="fname"><br>
+                                </form>
+                            </div>
+                            <div class="form-employee">
+                                <div class="dialog-text-content">ĐT cố định</div>
+                                <form action="">
+                                    <input type="text" id="fname" name="fname"><br>
+                                </form>
+                            </div>
+                            <div class="form-employee">
+                                <div class="dialog-text-content">Tài khoản ngân hàng</div>
+                                <form action="">
+                                    <input type="text" id="fname" name="fname"><br>
+                                </form>
+                            </div>
+                            <div class="form-employee">
+                                <div class="dialog-text-content">Tên ngân hàng</div>
+                                <form action="">
+                                    <input type="text" id="fname" name="fname"><br>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="3-2">
+                            <div class="form-employee">
+                                <div class="dialog-text-content">Email</div>
+                                <form action="">
+                                    <input type="text" id="fname" name="fname"><br>
+                                </form>
+                            </div>
+                            <div class="form-employee">
+                                <div class="dialog-text-content">Chi nhánh</div>
+                                <form action="">
+                                    <input type="text" id="fname" name="fname"><br>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="dialog__footer">
+                    <button class="m-button">
+                        Hủy
+                    </button>
+                    <button class="m-button">
+                        Cất
+                    </button>
+                    <button class="m-button">
+                        Cất và thêm
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- nhúng các thư viện  -->
+    <script src="../js/jquery-3.6.3.min.js"></script>
+
+    <!-- nhúng các js dùng chung  -->
+
+    <!-- nhúng các js riêng  -->
+    <script src="../js/pages/employee.js"></script>
+
+</body>
+
+</html>

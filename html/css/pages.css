@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    font-family: Noto font;
+}
+
+@font-face {
+    font-family: Noto font;
+    src: url(../assets/fonts/notosans-regular.2cb88a13.woff2);
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 56px calc(100vh - 56px);
+    grid-template-columns: 200px calc(100% - 200px);
+    background-color: rgb(255, 255, 255);
+}
+
+.header {
+    /*grid-column-start: 1;
+    grid-column-end: 3; */
+}
+
+.menu {
+    background-color: rgba(15, 16, 16, 0.881);
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border-right: 1px #ddd;
+}
+
+.content {
+    display: grid;
+    margin-left: 10px;
+    grid-template-rows: 45px 45px calc(100% - 130px) 40px;
+    background-color: rgba(233, 237, 237, 0.902);
+}

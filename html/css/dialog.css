@@ -1,0 +1,131 @@
+.dialog {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    /*căn theo chiều ngang */
+    align-items: center;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.756);
+}
+
+.dialog--wrapper {
+    position: relative;
+    display: grid;
+    flex-direction: column;
+    width: 800px;
+    min-height: 200px;
+    background-color: #ffffff;
+    /* position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    transform: translate(-50%; -50%);
+    border: 1px solid #dddddd;
+    border-radius: 4px; */
+}
+
+.dialog__button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    border: none;
+}
+
+.dialog__button:hover {
+    background-color: #e0d9d9;
+    border: none;
+}
+
+.dialog__header {
+    /* background-color: #019160; */
+    padding: 24px 24px 24px 24px;
+    display: flex;
+    align-items: center;
+}
+
+.dialog-text {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.dialog-info-employee {
+    display: flex;
+    align-items: center;
+}
+
+.dialog__content {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    /* overflow-x: auto; */
+    width: 100%;
+    margin-left: 25px;
+    /* background-color: #dbd518; */
+}
+
+.form-employee {
+    padding-left: 10px;
+}
+
+.dialog__footer {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    /* background-color: #cccccc; */
+}
+
+.dialog-text-content {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.one {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 20px;
+}
+
+.one-one-one {
+    display: flex;
+}
+
+.one-two-one {
+    display: flex;
+}
+
+.gender {
+    display: flex;
+}
+
+.one-two-two {
+    display: flex;
+}
+
+.three {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 10px;
+}
+
+.thre-one {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.zoom {
+    width: 80%;
+}
+
+#fname {
+    height: 30px;
+    border-radius: 4px;
+    border: 1px solid #d1cdcd;
+}
