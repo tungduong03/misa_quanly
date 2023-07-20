@@ -1,4 +1,4 @@
 database: DAOTAO.AI.2023.NTDUONG
 
-do ko kết nối được database của a Mạnh trong C# nên e vẫn phải 
+do ko kết nối được database của a Mạnh trong C# khi RESTful API nên e vẫn phải 
 kết nối localhost ạ. 
